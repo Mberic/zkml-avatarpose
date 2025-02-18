@@ -13,7 +13,7 @@ contract Halo2Verifier is Script {
         vm.startBroadcast();
         
         // Load the contract's bytecode from out/
-        bytes memory bytecode = vm.readFileBinary("out/MyContract.bin");
+        bytes memory bytecode = vm.readFileBinary("out/Halo2Verifier.sol/Halo2Verifier.json");
         
         // Etch the contract into a specific address (simulate deploy)
         contractAddr = address(0x100); // Any arbitrary address
